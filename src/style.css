@@ -1,0 +1,33 @@
+.ptr {
+  position: absolute;
+  top: -30px;
+  display: block;
+  height: 30px;
+  padding: 5px 0;
+  left: 0px;
+  right: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.ptr .image {
+  width: 14px;
+  height: 14px;
+  margin: 3px auto;
+  transform: translate3d(0, 0, 0);
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform .3s linear;
+  transition: -webkit-transform .3s linear;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj48cGF0aCBkPSJNOS44NTQgMTkuMzU0bDYtNmEuNS41IDAgMCAwLS43MDctLjcwN0wxMCAxNy43OTNWMS41YS41LjUgMCAwIDAtMSAwdjE2LjI5M2wtNS4xNDUtNS4xNDZhLjUuNSAwIDAgMC0uNzA3LjcwOGw2IDZhLjUuNSAwIDAgMCAuNzA3IDB6Ii8+PC9zdmc+);
+}
+.ptr .center {
+  margin: 0 auto;
+  height: 20px;
+}
+
+.ptr .image.rotate {
+  -webkit-transform: translate3d(0, 0, 0) rotate(180deg);
+}
