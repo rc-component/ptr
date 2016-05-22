@@ -16,8 +16,7 @@
   margin: 3px auto;
   transform: translate3d(0, 0, 0);
   transform-origin: center center;
-  -webkit-transition: -webkit-transform .3s linear;
-  transition: -webkit-transform .3s linear;
+  transition: transform .3s linear;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -29,5 +28,5 @@
 }
 
 .ptr .image.rotate {
-  -webkit-transform: translate3d(0, 0, 0) rotate(180deg);
+  transform: translate3d(0, 0, 0) rotate(180deg);
 }
