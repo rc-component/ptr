@@ -6,6 +6,12 @@ Build with [webpack](https://webpack.github.io/) and [CSS Modules](https://githu
 
 [Story book](https://rc-component.github.io/ptr/)
 
+*This library is used for mobile device only*
+
+## Install
+
+    npm i rc-ptr
+
 ## Usage
 
 ```
