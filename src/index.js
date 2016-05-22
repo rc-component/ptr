@@ -79,6 +79,9 @@ export default class Ptr extends Component {
     }
   }
   refresh () {
+    this.setState({
+      stage: STAGE_LOADING
+    })
     let scrollable = this.scrollable
     scrollable.scrollTop = -30
     let self = this
@@ -96,9 +99,6 @@ export default class Ptr extends Component {
   ontouchend = e => {
     if (this.state.stage === STAGE_ROTATE) {
       e.stopImmediatePropagation()
-      this.setState({
-        stage: STAGE_LOADING
-      })
       this.refresh()
     }
   }
