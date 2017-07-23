@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf, action } from '@kadira/storybook';
 import Ptr from '../index';
 import Iscroll from 'rc-iscroll'
+import style from './style.css'
 
 const boxStyles = {
   width: 100,
@@ -18,7 +19,9 @@ function callback() {
 storiesOf('Ptr', module)
   .add('spinner', () => {
     return (
-      <Iscroll overflow={45} style={{...boxStyles}}>
+      <Iscroll overflow={45}
+        barClass={style.handlebar}
+        style={{...boxStyles}}>
         <Ptr callback={callback}/>
         <div style={{height: 200, backgroundColor: '#eee'}}/>
       </Iscroll>

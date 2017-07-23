@@ -1,6 +1,7 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import ReactDom from 'react-dom'
 import style from './style.css'
+import PropTypes from 'prop-types'
 import Spinner from 'rc-ispinner'
 import cx from 'classnames'
 import once from 'once'
